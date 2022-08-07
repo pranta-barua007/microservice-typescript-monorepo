@@ -1,0 +1,17 @@
+{
+  "name": "microservice-typescript-monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff",
+    "postinstall": "lerna bootstrap --hoist"
+  },
+  "devDependencies": {
+    "lerna": "latest"
+  }
+}
